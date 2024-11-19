@@ -1,0 +1,10 @@
+<form [formGroup]="login" (submit)="navigateToHome()">
+    <label>User Name</label>
+    <input type="text" [(ngModel)]="user" formControlName = "userName"><br>
+    <label>password</label>
+    <input type="password" formControlName = "password"><br>
+<button class="btn btn-primary">Login</button>
+</form>
+
+<h1>{{user}}</h1>
+
