@@ -27,8 +27,7 @@ export class LoginComponent implements OnInit{
   navigateToHome() {
     if(this.login.valid){
       console.log(this.login.value);
-    this.router.navigate(['home']);
+    this.router.navigate(['product/list']);
     }
   }
-
 }

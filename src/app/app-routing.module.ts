@@ -18,6 +18,14 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
+    path:'user',
+    loadChildren: () => import('./user-management/user-management.module').then(m => m.UserManagementModule)
+  },
+  {
+    path:'product',
+    loadChildren: () => import('./product-management/product-management.module').then(m => m.ProductManagementModule)
+  },
+  {
     path: '**',
     redirectTo: 'login'
   }
